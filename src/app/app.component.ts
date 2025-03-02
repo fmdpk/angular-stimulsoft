@@ -1,4 +1,3 @@
-import { StimulsoftViewerModule } from 'stimulsoft-viewer-angular';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 declare var Stimulsoft: any;
@@ -87,7 +86,7 @@ export const TableData = [
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [StimulsoftViewerModule],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
