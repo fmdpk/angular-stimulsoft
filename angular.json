@@ -29,12 +29,18 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/reports",
+              "src/assets/stimulsoft"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/stimulsoft/stimulsoft.viewer.office2013.whiteblue.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/stimulsoft/stimulsoft.reports.js",
+              "src/assets/stimulsoft/stimulsoft.viewer.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -96,12 +102,19 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/stimulsoft/stimulsoft.viewer.office2013.whiteblue.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/stimulsoft/stimulsoft.reports.js",
+              "src/assets/stimulsoft/stimulsoft.viewer.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d3cc2d82-725d-40af-b284-5567b3c6d61e"
   }
 }

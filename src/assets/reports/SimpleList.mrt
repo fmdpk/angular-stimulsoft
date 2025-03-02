@@ -1,0 +1,76 @@
+{
+  "StiReport": {
+    "ReportVersion": "2023.3.1",
+    "ReportName": "SimpleList",
+    "ReportAlias": "Simple List Report",
+    "ReportCreated": "2023-10-01T12:00:00",
+    "ReportChanged": "2023-10-01T12:00:00",
+    "ReportGuid": "12345678-1234-1234-1234-123456789012",
+    "ReportUnit": "Centimeters",
+    "ReportPage": {
+      "Name": "Page1",
+      "Width": 21,
+      "Height": 29.7,
+      "Margins": {
+        "Left": 1,
+        "Right": 1,
+        "Top": 1,
+        "Bottom": 1
+      },
+      "Bands": {
+        "PageHeaderBand": {
+          "Height": 1,
+          "Components": [
+            {
+              "Type": "StiText",
+              "Name": "PageHeaderText",
+              "Text": "Simple List Report",
+              "Left": 1,
+              "Top": 0.5,
+              "Width": 19,
+              "Height": 0.5,
+              "Font": {
+                "Name": "Arial",
+                "Size": 14,
+                "Bold": true
+              },
+              "HorAlignment": "Center"
+            }
+          ]
+        },
+        "DataBand": {
+          "Height": 1,
+          "DataSourceName": "MyData",
+          "Components": [
+            {
+              "Type": "StiText",
+              "Name": "NameText",
+              "Text": "{MyData.Name}",
+              "Left": 1,
+              "Top": 0.2,
+              "Width": 8,
+              "Height": 0.6,
+              "Font": {
+                "Name": "Arial",
+                "Size": 12
+              }
+            },
+            {
+              "Type": "StiText",
+              "Name": "AgeText",
+              "Text": "{MyData.Age}",
+              "Left": 10,
+              "Top": 0.2,
+              "Width": 8,
+              "Height": 0.6,
+              "Font": {
+                "Name": "Arial",
+                "Size": 12
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
